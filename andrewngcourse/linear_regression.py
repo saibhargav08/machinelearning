@@ -25,7 +25,7 @@ X =  np.hstack((ones, X))
 
 def computecost(X, y, theta):
     temp = np.dot(X, theta) - y
-    return np.sum(np.power(temp, 2))/2*m
+    return np.sum(np.power(temp, 2)) / (2 * m)
 J = computecost(X, y, theta)
 print(J)
 
